@@ -1,0 +1,149 @@
+
+.divTable {
+  display: table;
+  width: 100%;
+  border:1px solid #666666;
+}
+  .divRow {
+    display: table-row;
+    width: auto;
+    border: 1px solid black;
+  }
+  .divCell {
+    display: table-cell;
+    width: 16.5%;
+    border: 1px solid #666666;
+  }
+  .divCellPEPA {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: hidden;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: lightgreen;
+  }
+  .divCellPEPB {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: hidden;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: lightgreen;
+  }
+  .divCellPEPC {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: lightgreen;
+  }
+
+  .divCellCSA {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: hidden;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: lightpink;
+  }
+  .divCellCSB {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: hidden;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: lightpink;
+  }
+  .divCellCSF {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: lightpink;
+  }
+  .divCellMA {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: lightblue;
+  }
+
+  .divCellCALA {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: hidden;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: #B19CD9;
+  }
+  .divCellCALB {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: hidden;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: #B19CD9;
+  }
+
+  .divCellWDA {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: hidden;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: teal;
+  }
+  .divCellWDC {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: hidden;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: teal;
+  }
+  .divCellWDB {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: hidden;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: teal;
+  }
+  .divCellWDD {
+    display: table-cell;
+    width: 16.5%
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: hidden;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: teal;
+  }

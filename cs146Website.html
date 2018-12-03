@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Connie Xu's Schedule</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+<body>
+  <h1>Student Constance (Connie) Xu's Schedule</h1>
+  <ul>
+    <li><input type="color" id="CALcolor" value="#B19cD9" onchange="cal103color()"><u><input type="checkbox" id="CAL103"  onclick="CAL103check()">CAL103</u> Writing</li>
+    <li><input type="color" id="CS115color" value="#D14CD9" onchange="cs115color()"><u><input type="checkbox" id="CS115"  onclick="CS115check()">CS115</u> Intro to CS</li>
+    <li><input type="color" id="CS146color" value="#4CB4C9" onchange="cs146color()"><u><input type="checkbox" id="CS146"  onclick="CS146check()">CS146</u> Intro to Web Design</li>
+    <li><input type="color" id="MA121color" value="#35e5d7" onchange="ma121color()"><u><input type="checkbox" id="MA121"  onclick="MA121check()">MA121</u> Differential Calculus</li>
+    <li><input type="color" id="PEP111color" value="#26A64C" onchange="pep111color()"><u><input type="checkbox" id="PEP111"  onclick="PEP111check()">PEP111</u> Physics Mechanics</li>
+  </ul>
+
+  <script>
+  function CS115check() {
+      var checkBox = document.getElementById("CS115");
+      var classes = document.getElementsByName("cs115Class");
+      var class2 = document.getElementsByName("cs115Class2");
+      var class3 = document.getElementsByName("cs115Class3");
+      if (checkBox.checked == true){
+          for(var i=0; i<classes.length;i++){
+            classes[i].className="divCellCSF";
+            classes[i].textContent="CS115";
+          }
+          for(var i=0; i<class2.length;i++){
+            class2[i].className="divCellCSB";
+            class3[i].className="divCellCSA";
+            class3[i].textContent="CS115";
+          }
+
+      } else {
+         for(var i=0; i<classes.length; i++){
+           classes[i].className="divCell";
+           classes[i].textContent="";
+         }
+        for(var i=0; i<class2.length;i++){
+           class2[i].className="divCell";
+           class3[i].className="divCell";
+           class3[i].textContent="";
+         }
+
+      }
+  }
+  function cs115color(){
+    var checkBox = document.getElementById("CS115");
+    var boxC = document.getElementsByName("cs115Class");
+    var color = document.getElementById("CS115color");
+    var c = color.value;
+    var a = document.getElementsByName("cs115Class2");
+    var b = document.getElementsByName("cs115Class3");
+
+    if (checkBox.checked == true){
+      for (var i=0; i<boxC.length; i++){
+        boxC[i].style.backgroundColor = c;
+      }
+      for (var i=0; i<a.length; i++){
+        a[i].style.backgroundColor = c;
+        b[i].style.backgroundColor = c;
+      }
+    }
+  }
+  function MA121check() {
+      var checkBox = document.getElementById("MA121");
+      var classes = document.getElementsByName("MA121Class");
+      if (checkBox.checked == true){
+          for(var i=0; i<classes.length;i++){
+            classes[i].className="divCellMA";
+            classes[i].textContent="MA121";
+          }
+      } else {
+         for(var i=0; i<classes.length; i++){
+           classes[i].className="divCell";
+           classes[i].textContent="";
+         }
+      }
+    }
+  function ma121color(){
+    var checkBox = document.getElementById("MA121");
+    var boxC = document.getElementsByName("MA121Class");
+    var color = document.getElementById("MA121color");
+    var c = color.value;
+    if (checkBox.checked == true){
+      for (var i=0; i<boxC.length; i++){
+        boxC[i].style.backgroundColor = c;
+      }
+    }
+  }
+  function PEP111check() {
+      var checkBox = document.getElementById("PEP111");
+      var classes = document.getElementsByName("PEP111Class");
+      var class2 = document.getElementsByName("PEP111Class2");
+      var class3 = document.getElementsByName("PEP111Class3");
+      if (checkBox.checked == true){
+        for (var i = 0; i < class2.length; i++){
+          class2[i].className="divCellPEPA";
+          class2[i].textContent="PEP111";
+          class3[i].className="divCellPEPB";
+        }
+          for(var i=0; i<classes.length;i++){
+            classes[i].className="divCellPEPC";
+            classes[i].textContent="PEP111";
+          }
+      } else {
+         for(var i=0; i<classes.length; i++){
+           classes[i].className="divCell";
+           classes[i].textContent="";
+         }
+         for (var i=0; i<class2.length;i++){
+           class2[i].className="divCell";
+           class2[i].textContent="";
+           class3[i].className="divCell";
+         }
+      }
+    }
+  function pep111color(){
+    var checkBox = document.getElementById("PEP111");
+    var boxC = document.getElementsByName("PEP111Class");
+    var color = document.getElementById("PEP111color");
+    var c = color.value;
+    var a = document.getElementsByName("PEP111Class2");
+    var b = document.getElementsByName("PEP111Class3");
+
+    if (checkBox.checked == true){
+      for (var i=0; i<boxC.length; i++){
+        boxC[i].style.backgroundColor = c;
+      }
+      for (var i=0; i<a.length; i++){
+        a[i].style.backgroundColor = c;
+        b[i].style.backgroundColor = c;
+      }
+    }
+  }
+  function CAL103check() {
+      var checkBox = document.getElementById("CAL103");
+      var classes = document.getElementsByName("CAL103Class");
+      var class2 = document.getElementsByName("CAL103Class2");
+      if (checkBox.checked == true){
+          for(var i=0; i<classes.length;i++){
+            classes[i].className="divCellCALA";
+            classes[i].textContent="CAL103";
+            class2[i].className="divCellCALB";
+          }
+      } else {
+         for(var i=0; i<classes.length; i++){
+           classes[i].className="divCell";
+           classes[i].textContent="";
+           class2[i].className="divCell";
+         }
+      }
+  }
+  function cal103color(){
+    var checkBox = document.getElementById("CAL103");
+    var boxC = document.getElementsByName("CAL103Class");
+    var b = document.getElementsByName("CAL103Class2");
+    var color = document.getElementById("CALcolor");
+    var c = color.value;
+    if (checkBox.checked == true){
+      for (var i=0; i<boxC.length; i++){
+        boxC[i].style.backgroundColor = c;
+      }
+      for (var i=0; i<b.length; i++){
+        b[i].style.backgroundColor = c;
+      }
+    }
+  }
+  function CS146check(){
+    var checkBox = document.getElementById("CS146");
+    var classes = document.getElementsByName("cs146Class2");
+    var class2 = document.getElementsByName("cs146Class3");
+    if (checkBox.checked == true){
+        for(var i=0; i<classes.length;i++){
+          classes[i].className="divCellWDA";
+          classes[i].textContent="CS146";
+          class2[i].className="divCellWDC";
+        }
+    } else {
+       for(var i=0; i<classes.length; i++){
+         classes[i].className="divCell";
+         classes[i].textContent="";
+         class2[i].className="divCell";
+       }
+    }
+  }
+  function cs146color(){
+    var checkBox = document.getElementById("CS146");
+    var boxC = document.getElementsByName("cs146Class2");
+    var b = document.getElementsByName("cs146Class3");
+    var color = document.getElementById("CS146color");
+    var c = color.value;
+    if (checkBox.checked == true){
+      for (var i=0; i<boxC.length; i++){
+        boxC[i].style.backgroundColor = c;
+      }
+      for (var i=0; i<b.length; i++){
+        b[i].style.backgroundColor = c;
+      }
+    }
+  }
+  </script>
+
+  <div class="divTable">
+
+    <div class="divRow">
+      <div class="box divCell" align="center">Time</div>
+      <div class="box divCell" align="center">Monday</div>
+      <div class="box divCell" align="center">Tuesday</div>
+      <div class="box divCell" align="center">Wednesday</div>
+      <div class="box divCell" align="center">Thursday</div>
+      <div class="box divCell" align="center">Friday</div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">8 AM</div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell" name="cs115Class3"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">9 AM</div>
+      <div class="divCell" name="PEP111Class"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell" name="cs115Class2"></div>
+      <div class="divCell" name="PEP111Class"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">10 AM</div>
+      <div class="divCell" name="cs115Class"></div>
+      <div class="divCell" name= "PEP111Class2"></div>
+      <div class="divCell" name="cs115Class"></div>
+      <div class="divCell"></div>
+      <div class="divCell" name="cs115Class"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">11 AM</div>
+      <div class="divCell"></div>
+      <div class="divCell" name="PEP111Class3"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">12 PM</div>
+      <div class="divCell" name="MA121Class"></div>
+      <div class="divCell" name="MA121Class"></div>
+      <div class="divCell" name="MA121Class"></div>
+      <div class="divCell" name="MA121Class"></div>
+      <div class="divCell" name="MA121Class"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">1 PM</div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">2 PM</div>
+      <div class="divCell"></div>
+      <div class="divCell" name="CAL103Class"></div>
+      <div class="divCell"></div>
+      <div class="divCell" name="CAL103Class"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">3 PM</div>
+      <div class="divCell"></div>
+      <div class="divCell" name="CAL103Class2"></div>
+      <div class="divCell"></div>
+      <div class="divCell" name="CAL103Class2"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">4 PM</div>
+      <div class="divCell"></div>
+      <div class="divCell" name = "cs146Class2"></div>
+      <div class="divCell"></div>
+      <div class="divCell" name = "cs146Class2"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">5 PM</div>
+      <div class="divCell"></div>
+      <div class="divCell" name="cs146Class3"></div>
+      <div class="divCell"></div>
+      <div class="divCell" name = "cs146Class3"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">6 PM</div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">7 PM</div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+    </div>
+
+    <div class="divRow">
+      <div class="divCell">8 PM</div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+      <div class="divCell"></div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
